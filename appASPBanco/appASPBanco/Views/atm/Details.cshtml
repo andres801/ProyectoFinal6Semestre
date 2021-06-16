@@ -1,0 +1,58 @@
+﻿@model appASPBanco.Models.atm
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>atm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.codigoAtm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codigoAtm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaUltimoMantenimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaUltimoMantenimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dinero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dinero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idSucursal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idSucursal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idAtm }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

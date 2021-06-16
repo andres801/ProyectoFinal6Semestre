@@ -1,0 +1,45 @@
+﻿@model IEnumerable<appASPBanco.Models.ciudad>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreCiudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idEstado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estatus)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreCiudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idEstado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estatus)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idCiudad }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idCiudad }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idCiudad })
+        </td>
+    </tr>
+}
+
+</table>

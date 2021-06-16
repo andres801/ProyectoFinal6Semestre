@@ -1,0 +1,17 @@
+ciudad: idCiudad,nombreCiudad,idEstado,estatus
+estado: idEstado,nombreEstado,estatus
+sucursal: idSucursal,nombreSucursal,direccionSucursal,idCiudad,estatus
+tipoProducto: idTipoProducto,nombreTipoProducto,estatus
+producto: idProducto,codigoProducto,idTipoProducto,idSucursal,estatus
+cliente: idCliente,nombreCliente,fechaNacimiento,direccionCliente,idCiudad,estatus
+clienteProducto: idClienteProducto,idCliente,idProducto,estatus
+movimiento: idMovimiento,montoMovimiento,idProducto,idAutorizacion,estatus
+comision: idComision,nombreComision,montoComision,estatus
+comisionProducto: idComisionProducto,idComision, idProducto,estatus
+atm: idAtm,codigoAtm,fechaUltimoMantenimiento,dinero,idSucursal,estatus
+puesto: idPuesto,nombrePuesto,estatus
+empleado: idEmpleado,nombreEmpleado,idSucursal,idPuesto,estatus
+autorizacion: idAutorizacion,descripcionAutorizacion,estatus
+domiciliacion: idDomiciliacion,descripcionDomiciliacion,montoDomiciliacion,idServicio,idProducto,estatus
+servicio: idServicio,descripcionServicio,estatus
+prestamo: idPrestamo,fechaPrestamo,cantidadPrestamo,idCliente,estatus

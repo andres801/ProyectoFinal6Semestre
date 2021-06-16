@@ -1,0 +1,42 @@
+﻿@model appASPBanco.Models.ciudad
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ciudad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreCiudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreCiudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idEstado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idEstado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idCiudad }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

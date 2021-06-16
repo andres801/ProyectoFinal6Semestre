@@ -1,0 +1,50 @@
+﻿@model appASPBanco.Models.empleado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idSucursal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idSucursal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idPuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idPuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idEmpleado }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

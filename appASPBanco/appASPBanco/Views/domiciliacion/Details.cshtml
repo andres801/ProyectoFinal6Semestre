@@ -1,0 +1,58 @@
+﻿@model appASPBanco.Models.domiciliacion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>domiciliacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descriptionDomiciliacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descriptionDomiciliacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.montoDomiciliacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.montoDomiciliacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idServicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idServicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idProducto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idProducto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idDomiciliacion }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
